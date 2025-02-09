@@ -1,9 +1,9 @@
-## Create Student Class that takes name & marks of 3 subjects as arguments in constructor. Then create a method to print the Average.
+## Create Student Class that takes brand & marks of 3 subjects as arguments in constructor. Then create a method to print the Average.
 
 
 # class Student:
-#     def __init__(self,name,marks):
-#         self.name = name
+#     def __init__(self,brand,marks):
+#         self.brand = brand
 #         self.marks = marks
         
         
@@ -11,22 +11,22 @@
 #         sum = 0
 #         for value in self.marks:
 #             sum+=value
-#         print("hi",self.name, "your Avg Score is:",sum/3)
+#         print("hi",self.brand, "your Avg Score is:",sum/3)
         
 # s1 = Student('Tony Stark' , [99,98,95])
 # s1.get_avg()
 
-# s1.name = "Captain America"
+# s1.brand = "Captain America"
 # s1.get_avg()
 
 # class Student:
-#     def __init__(self,name):
-#         self.name = name
+#     def __init__(self,brand):
+#         self.brand = brand
         
 # s1 = Student('Aditya')
-# print(s1.name)
-# del s1.name
-# print(s1.name)
+# print(s1.brand)
+# del s1.brand
+# print(s1.brand)
 
 
 # class Account:
@@ -62,6 +62,7 @@
 
 class Car:
     color = "balck"
+    
     @staticmethod
     def start():
         print("Car Started..")
@@ -71,15 +72,20 @@ class Car:
         print("Car Stopped..")
         
 class ToyotaCar(Car):
-       def __init__(self,name):
-            self.name = name
+       def __init__(self,brand):
+            self.brand = brand
             
-car1 = ToyotaCar("Fortuner")
-Car2 = ToyotaCar("Legender")
+# car1 = ToyotaCar("Fortuner")
+# Car2 = ToyotaCar("Legender")
 
-print(car1.name)
-print(car1.start())
+# print(car1.brand)
+# print(car1.start())
 
-print(car1.color)
+# print(car1.color)
 
-# 18.15
+class Fortuner(ToyotaCar):
+    def __init__(self,type):
+        self.type = type
+        
+car1 = Fortuner("Diesel")
+car1.start()
