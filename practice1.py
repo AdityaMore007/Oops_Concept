@@ -60,20 +60,20 @@
 
 # Inheritance
 
-class Car:
-    color = "balck"
+# class Car:
+#     color = "balck"
     
-    @staticmethod
-    def start():
-        print("Car Started..")
+#     @staticmethod
+#     def start():
+#         print("Car Started..")
         
-    @staticmethod
-    def stop():
-        print("Car Stopped..")
+#     @staticmethod
+#     def stop():
+#         print("Car Stopped..")
         
-class ToyotaCar(Car):
-       def __init__(self,brand):
-            self.brand = brand
+# class ToyotaCar(Car):
+#        def __init__(self,brand):
+#             self.brand = brand
             
 # car1 = ToyotaCar("Fortuner")
 # Car2 = ToyotaCar("Legender")
@@ -83,9 +83,27 @@ class ToyotaCar(Car):
 
 # print(car1.color)
 
-class Fortuner(ToyotaCar):
-    def __init__(self,type):
-        self.type = type
+# class Fortuner(ToyotaCar):
+#     def __init__(self,type):
+#         self.type = type
         
-car1 = Fortuner("Diesel")
-car1.start()
+# car1 = Fortuner("Diesel")
+# car1.start() 
+
+## CLASS METHOD:
+
+# class Person:
+#     name = "Anonymous"
+    
+#     # def changeName(self,name):
+#     #     # Person.name = name
+#     #     self.__class__.name = "Rahul"
+    
+#     @classmethod
+#     def changeName(cls,name):
+#         cls.name = name
+    
+# p1 = Person()
+# p1.changeName("Rahul Kumar")
+# print(p1.name)
+# print(Person.name)

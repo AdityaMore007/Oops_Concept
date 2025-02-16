@@ -33,6 +33,8 @@ class ToyotaCar(Car):
         super().start()
         
 car1 = ToyotaCar("Priius" , "Electric")
+print(car1.name)
 print(car1.type)
+# print(car1.start())
 
     
